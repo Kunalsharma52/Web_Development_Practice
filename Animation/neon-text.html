@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neon Text</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: black;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: white;
+
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon {
+
+            from {
+                text-shadow:
+                    0 0 5px white,
+                    0 0 10px white;
+            }
+
+            to {
+                text-shadow:
+                    0 0 10px white,
+                    0 0 20px white,
+                    0 0 40px white,
+                    0 0 80px white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NEON</h1>
+
+</body>
+</html>

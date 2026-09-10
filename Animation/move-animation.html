@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Animation</title>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+
+            position: relative;
+
+            animation: move 4s linear infinite;
+        }
+
+        @keyframes move {
+
+            0% {
+                left: 0;
+            }
+
+            50% {
+                left: 80%;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Movie Dashboard</title>
+
+    <style>
+
+        body {
+            margin: 20px;
+            font-family: Arial;
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .movies {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .movie {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .movie:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 15px #aaa;
+        }
+
+        .movie img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 10px;
+        }
+
+        .details h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .details p {
+            color: #555;
+        }
+
+        .book {
+            padding: 8px 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .book:hover {
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1></h1>
+
+    <div class="movies">
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/mE_Qcd11s7sZJGaSP3aBexdmOv7s1C6zp7ZU2kguvJ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS8w/NTgvSGFudW1hbi1B/bnNoLU9yaWdpbmFs/LU1vdGlvbi1QaWN0/dXJlLVNvdW5kdHJh/Y2stSGluZGktMjAy/Ni0yMDI2MDcxMDIx/MTMwMy01MDB4NTAw/LmpwZw">
+            <div class="details">
+                <h2>Hanuman Ansh</h2>
+                <p>UA16+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/1etV0wphl0xf-yfTbOTYigC5ZS5WKHVCDT_tbEpmRlk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzdHJpY3QuaW4v/bW92aWVzLWFzc2V0/cy9pbWFnZXMvY2lu/ZW1hL01pcnphMy1l/MzgyY2U3MC05YmMx/LTExZjEtODQ5OS0w/NzdjMDg3MzM4NTIu/anBnP2ltPVJlc2l6/ZSx3aWR0aD0zMjA">
+
+            <div class="details">
+                <h2>Mirzapur</h2>
+                <p>UA18+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/rmZmpFVgxvCGwElqnTc3JjnbkPih5d6uyOLTWrrx8hQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/bmV3LXBvc3Rlci1m/cm9tLXRveGljLW1v/dmllLXYwLXJoeTl6/dzllYjQ2ZzEuanBl/Zz93aWR0aD02NDAm/Y3JvcD1zbWFydCZh/dXRvPXdlYnAmcz05/YzcwNTZkNDVjOGU4/MWU2ZjJhNzYzM2Zk/ZWFhZmY4NTBjYzM3/NzBl">
+
+            <div class="details">
+                <h2>Toxic</h2>
+                <p>UA18+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/j_UDT3-0Bl_e2bCmGgAk1WDuTfQRv3jIz8fZNF7NXxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L21h/cnZlbGNpbmVtYXRp/Y3VuaXZlcnNlL2lt/YWdlcy80LzQ1L0F2/ZW5nZXJzX0Rvb21z/ZGF5Xy1fRDIzX1Bv/c3Rlci5qcGcvcmV2/aXNpb24vbGF0ZXN0/L3NjYWxlLXRvLXdp/ZHRoLWRvd24vMjY4/P2NiPTIwMjYwODE1/MDEyMzE1">
+
+            <div class="details">
+                <h2>Avenger DoomsDay</h2>
+                <p>UA16+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/ysCldh5cvb6RhpGi7LLr9MFUp0bvMLaCrMG23t5sPCY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L21h/dHJpeC9pbWFnZXMv/NS81Ni9UaGVfTWF0/cml4X2RpZ2l0YWxf/cmVsZWFzZV9jb3Zl/ci5qcGcvcmV2aXNp/b24vbGF0ZXN0L3Nj/YWxlLXRvLXdpZHRo/LWRvd24vMjY4P2Ni/PTIwMjEwOTA4MTEx/MjQ1">
+
+            <div class="details">
+                <h2>Matrix</h2>
+                <p>UA20+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/ar-YaJ-SqRpudEBrjg4M4LyTdWDkNAvxm_QpInI4gbs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/b2ZmaWNpYWwtcG9z/dGVycy1mb3Itc3Bp/ZGVyLW1hbi1icmFu/ZC1uZXctZGF5LXYw/LXRwaDFnYTc1ZXU3/aDEuanBnP3dpZHRo/PTY0MCZjcm9wPXNt/YXJ0JmF1dG89d2Vi/cCZzPWUxZTAxZDJl/YTM0ZDljNDhkOGUw/NTRjZGU2OWRhNDMy/MjQyZmRkZjM">
+
+            <div class="details">
+                <h2>SpiderMan</h2>
+                <p>UA16+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/a2758sbtiaiWkGB3YXU87PBy61iquv91CLv55jUN_7o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdiLzFi/LzAzLzdiMWIwMzMx/OTkzNDg4NDgyZmE2/NTgwNzQxY2Y5OGZi/LmpwZw">
+
+            <div class="details">
+                <h2>Dune</h2>
+                <p>UA18+| Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+
+        <div class="movie">
+            <img src="https://imgs.search.brave.com/JEq5sWTMF3UwLjQ3-p0LQG-N3CZMR0a_bPmUgyjG8AY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzI4LzIy/L2FlLzI4MjJhZTVj/ZDQzNTIyYjVmMzhh/NTM5NjIwYTE0NGNl/LmpwZw">
+
+            <div class="details">
+                <h2>Avatar3</h2>
+                <p>UA18+ | Hindi</p>
+                <button class="book">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

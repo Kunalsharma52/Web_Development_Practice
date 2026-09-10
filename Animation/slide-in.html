@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slide Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 150px;
+            background: purple;
+
+            animation: slide 2s ease;
+        }
+
+        @keyframes slide {
+
+            from {
+                transform: translateX(-500px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
