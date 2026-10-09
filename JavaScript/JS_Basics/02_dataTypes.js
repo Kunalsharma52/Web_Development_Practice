@@ -19,3 +19,6 @@ console.log(typeof temperature)
 
 console.log(typeof isLoggedIn)
 
+
+
+
