@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>JobAdda - Jobs</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="container nav">
+
+            <!-- Website logo -->
+            <a href="index.html" class="logo">JobAdda<span>.</span></a>
+
+            <!-- Navigation menu -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="internships.html">Internships</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Page heading -->
+            <h1>All Jobs</h1>
+            <p>Search and browse job listings below.</p>
+
+            <!-- Search box -->
+            <div class="search">
+                <div class="search-row">
+
+                    <input type="text" id="searchInput" placeholder="Search by job title...">
+
+                    <select id="locationFilter">
+                        <option value="">All Locations</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Remote">Remote</option>
+                    </select>
+
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                    </select>
+
+                    <button class="btn" id="searchBtn">Search</button>
+
+                </div>
+            </div>
+
+            <!-- Job listings -->
+            <div id="jobList">
+
+                <!-- Job 1 -->
+                <div class="job">
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <p class="meta">TechNova Pvt Ltd • Delhi • Full-time</p>
+                        <span class="badge">HTML/CSS/JS</span>
+                    </div>
+                    <div class="top-actions">
+                        <button class="icon-btn favorite">★ Save</button>
+                        <a href="job-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job">
+                    <div>
+                        <h3>Backend Developer</h3>
+                        <p class="meta">CodeWorks • Bangalore • Full-time</p>
+                        <span class="badge">Node.js</span>
+                    </div>
+                    <div class="top-actions">
+                        <button class="icon-btn favorite">★ Save</button>
+                        <a href="job-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job">
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <p class="meta">PixelCraft • Remote • Part-time</p>
+                        <span class="badge">Figma</span>
+                    </div>
+                    <div class="top-actions">
+                        <button class="icon-btn favorite">★ Save</button>
+                        <a href="job-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="job">
+                    <div>
+                        <h3>Data Analyst</h3>
+                        <p class="meta">Insight Labs • Delhi • Full-time</p>
+                        <span class="badge">Excel/SQL</span>
+                    </div>
+                    <div class="top-actions">
+                        <button class="icon-btn favorite">★ Save</button>
+                        <a href="job-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="job">
+                    <div>
+                        <h3>DevOps Intern</h3>
+                        <p class="meta">CloudStack • Remote • Part-time</p>
+                        <span class="badge">AWS</span>
+                    </div>
+                    <div class="top-actions">
+                        <button class="icon-btn favorite">★ Save</button>
+                        <a href="job-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Shown only when no jobs match search, hidden by default -->
+            <div class="empty" id="emptyMsg" style="display: none;">
+                <p>No jobs found. Try a different search.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+
+            <p>JobAdda - Job, Internship and Placement Portal</p>
+
+            <p>Simple beginner project using HTML, CSS and JavaScript.</p>
+
+            <!-- Current year -->
+            <p>© <span id="year"></span> JobAdda</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

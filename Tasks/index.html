@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hidden checkbox used for CSS-only menu -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Header -->
+    <header class="header">
+
+        <!-- Hamburger -->
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Title -->
+        <div class="logo">
+            University Portal
+        </div>
+
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Profile</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <!-- Close button -->
+        <label for="menu-toggle" class="close-btn">
+            ×
+        </label>
+
+        <nav class="sidebar-nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Courses</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Overlay -->
+    <label for="menu-toggle" class="overlay"></label>
+
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>Welcome to the University Dashboard</h1>
+
+        <p>
+            This is your main content area. Resize the window or use
+            the hamburger icon to see the responsive behavior.
+        </p>
+
+    </main>
+
+</body>
+</html>
