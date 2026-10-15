@@ -34,3 +34,4 @@ console.log(string_MOV.includes(searchTerm))
 console.log(string_MOV.slice(0,4))
 
 console.log("Booking Confirmed")
+

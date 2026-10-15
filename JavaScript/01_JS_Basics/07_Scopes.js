@@ -15,7 +15,7 @@ myfunction();
 const movieName = "Dangal";
 
 function showMovie(){
-    let ticketPrice = '200';
+    let ticketPrice = 200;
     console.log(movieName);
     console.log(ticketPrice);
 }
