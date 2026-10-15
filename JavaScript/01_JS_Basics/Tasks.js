@@ -10,14 +10,15 @@
 //the final payable amount is rupees 641 after rounding
 
 
-let ticketPrice = Number(prompt("Enter ticket price:"));
-let quantity = Number(prompt("Enter quantity:"));
-let couponCode = prompt("Enter coupon code:");
+
+let ticketPrice = 250;
+let quantity = 3;
+let couponCode = "SAVE5";
 
 // Calculate subtotal
 let subtotal = ticketPrice * quantity;
 
-// Calculate quantity-based discount
+// Calculate quantity discount
 let quantityDiscount = 0;
 
 if (quantity >= 5) {
@@ -29,7 +30,7 @@ if (quantity >= 5) {
 // Amount after quantity discount
 let remainingAmount = subtotal - quantityDiscount;
 
-// Check coupon code
+// Calculate coupon discount
 let couponDiscount = 0;
 let validCoupon = "SAVE5";
 
@@ -47,4 +48,3 @@ console.log("Subtotal: ₹" + subtotal);
 console.log("Quantity Discount: ₹" + quantityDiscount);
 console.log("Coupon Discount: ₹" + couponDiscount);
 console.log("Final Payable Amount: ₹" + finalAmount);
-
