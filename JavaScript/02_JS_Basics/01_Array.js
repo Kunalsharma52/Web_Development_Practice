@@ -17,6 +17,10 @@ console.log(arr2)
 console.log("arr",arr)
 
 console.log(arr.indexOf(2))
+const person1 = {
+    userName: "Raj"
+};
+
 
 
 
