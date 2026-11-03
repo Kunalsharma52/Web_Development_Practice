@@ -7,7 +7,8 @@ const promisesOne = new Promise(function(resolve, reject){
 })
 
 const promisesTwo = new Promise(function(resolve, reject){
-    let data = null
+   
+    let data = {username: "John", password: "1234"}
     if(data){
         resolve(data)
     }else{
