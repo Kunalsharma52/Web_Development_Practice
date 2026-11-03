@@ -38,3 +38,15 @@ promisesTwo.then(function(data){
 .finally(function(){
     console.log("Promise is either rejected or resolved")
 })
+
+async function consumePromise(){
+    try{
+        const response = await promisesTwo()
+        console.log("response using async await", response)
+    } catch (err) {
+        console.log("error using async await", err)
+    }
+}
+
+const data = fetch("https://jsonplaceholder.typicode.com/posts")
+console.log("data is fetched from the endpoint api", data)
