@@ -12,7 +12,7 @@
 
 
 let ticketPrice = 250;
-let quantity = 3;
+let quantity = 8;
 let couponCode = "SAVE5";
 
 // Calculate subtotal
@@ -46,5 +46,5 @@ let finalAmount = Math.round(
 // Print results
 console.log("Subtotal: ₹" + subtotal);
 console.log("Quantity Discount: ₹" + quantityDiscount);
-console.log("Coupon Discount: ₹" + couponDiscount);
+console.log("Coupon Discount Per Ticket: ₹" + couponDiscount);
 console.log("Final Payable Amount: ₹" + finalAmount);
