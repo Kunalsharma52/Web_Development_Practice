@@ -18,7 +18,7 @@
 
 const booking = {
     customerName: "Kunal Sharma",
-    movieName: "Avengers: Endgame",
+    movieName: "Avengers Endgame",
     ticketPrice: 250,
     quantity: 3,
 
