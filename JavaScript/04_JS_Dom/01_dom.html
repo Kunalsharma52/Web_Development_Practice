@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+</head>
+<body>
+
+    <h1 id="title">Welcome to Learning DOM !!</h1>
+
+    <button id="change-btn">Change Heading</button>
+
+    <h2>List of 3CB</h2>
+
+    <button id="add-btn">Add Friend</button>
+
+    <ul id="add-friend">
+       
+    </ul>
+
+    <script>
+
+        // Select heading
+        const heading = document.getElementById("title");
+
+        // Select change button
+        const headingChangeButton = document.getElementById("change-btn");
+
+        // Change heading on button click
+        headingChangeButton.addEventListener("click", function() {
+            heading.innerText = "Heading is changed";
+            heading.style.color = "red";
+        });
+
+
+        // Select Add Friend button
+        const addButton = document.getElementById("add-btn");
+
+        // Select friend list
+        const friendList = document.getElementById("add-friend");
+
+        // Add new friend on button click
+        addButton.addEventListener("click", function() {
+
+            const li = document.createElement("li");
+
+            li.innerText = "k";
+
+            friendList.appendChild(li);
+
+        });
+
+    </script>
+
+</body>
+</html>
