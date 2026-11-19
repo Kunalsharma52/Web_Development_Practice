@@ -47,9 +47,18 @@
             <a href="#" class="nav-item">Stores</a>
             <a href="#" class="nav-item">Activities</a>
             <a href="#" class="nav-item">Play</a>
-        </nav>
+            
+       
+</nav>
 
     </header>
+    <!-- Search bar below navbar -->
+        <div class="body-search">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search movies...">
+                <button type="button">Search</button>
+        </div>
+    </div>
 
     <div class="cards-container">
 
@@ -198,8 +207,18 @@
     <div class="notification" id="notification">
         ✓ Booking Confirmed!
     </div>
+    <script>
+        function bookMovie(movieName) {
+            const notification = document.getElementById('notification');
+            notification.textContent = `✓ Booking Confirmed for ${movieName}!`;
+            notification.style.display = 'block';
 
-    
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+    </script> 
+    <script src="district-website-ui.js"></script>
 
 </body>
 

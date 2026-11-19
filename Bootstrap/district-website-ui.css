@@ -253,10 +253,47 @@ body {
 .book-btn {
     height: 35px;
     width: 100px;
-    margin: 0 12px 12px;
+    margin: 0 6px 6px;
     border: none;
     border-radius: 5px;
     background-color: #545459;
     color: white;
+    cursor: pointer;
+}
+
+/* Search bar below navbar */
+.body-search {
+    padding: 20px 40px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 250px;
+    height: 42px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #6845e8;
+}
+
+.search-box button {
+    height: 42px;
+    padding: 0 20px;
+    background-color: #6845e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
