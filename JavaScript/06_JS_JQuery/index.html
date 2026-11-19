@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning jQuery</title>
+</head>
+<body>
+    <h1 id = "heading">Welcome to learning jQuery</h1>
+    <button id = "btn">Click Me</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        //$(selector).action()
+
+        const pageHeading = $("#heading").css("color", "blue");
+        $("h1").hide();
+        $(document).ready(function(){
+            $("#change-btn").click(function(){
+                $("#heading").text("Welcome to learning jQuery").css("color", "blue");
+            });
+        });
+        console.log(pageHeading);
+    </script>
+
+
+</body>
+</html>
